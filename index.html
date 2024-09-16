@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="scoreboard">
+            <h3 class="wins-c">Wins: <span class="js-wins wins">0</span></h3>
+            <h3 class="ties-c">Ties: <span class="js-ties ties">0</span></h3>
+            <h3 class="losses-c">losses: <span class="js-losses losses">0</span></h3>
+        </div>
+        <div class="btn-c">
+            <button class="js-mode">Classic Mode</button>
+            <button class="js-reset-score">Reset Scores</button>
+            <button class="js-auto-btn">Auto Play</button>
+        </div>
+    </header>
+    <main>
+        <h1>Rock, Paper, Scissors Game</h1>
+        <h2>Select a move</h2>
+        <div class="moves">
+            <div class="js-rock-item rock">
+                <img class="new-mode" src="./images/fist.png" alt="">
+                <img class="old-mode" src="./images/rock.png" alt="">
+            </div>
+            <div class="js-paper-item paper">
+                <img class="new-mode" src="./images/hand.png" alt="">
+                <img class="old-mode" src="./images/paper.png" alt="">
+            </div>
+            <div class="js-scissors-item scissors">
+                <img class="new-mode" src="./images/peace.png" alt="">
+                <img class="old-mode" src="./images/Scissors.png" alt="">
+            </div>
+        </div>
+        <div class="js-display display"></div>
+        <div class="js-winner winner"></div>
+
+        <div class="js-reset-message reset-message hide">
+            <!-- <p>Are you sure you want to reset the score?</p>
+            <button class="js-yes-btn">Yes</button>
+            <button class="js-no-btn">No</button> -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
